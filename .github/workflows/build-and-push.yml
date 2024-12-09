@@ -17,6 +17,7 @@ on:
       - 'requirements.txt'
       - 'Dockerfile'
       - '.dockerignore'
+  workflow_dispatch:
 
 jobs:
   build-and-push:
