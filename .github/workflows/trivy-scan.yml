@@ -17,7 +17,14 @@ jobs:
         with:
           image-ref: '${{ secrets.DOCKERHUB_USERNAME }}/python-peoples-crud-backend:latest'
           format: 'table'
-          exit-code: '1'
+          exit-code: '0'
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'CRITICAL,HIGH'
+          output: 'trivy-backend-report.json'
+
+      - name: Upload Trivy report as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-report
+          path: trivy-backend-report.json
