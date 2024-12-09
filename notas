@@ -1,0 +1,7 @@
+- name: Scan backend image with Trivy
+        uses: aquasecurity/trivy-action@v0.3.0
+        with:
+          image: ${{ secrets.DOCKERHUB_USERNAME }}/python-peoples-crud-backend:latest
+          format: 'json'
+          severity: 'HIGH,CRITICAL'
+          output: 'trivy-backend-report.json'
