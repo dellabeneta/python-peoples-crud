@@ -1,6 +1,6 @@
 ## Status do Projeto
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dellabeneta/python-peoples-crud/docker-publish.yml?label=Build)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dellabeneta/python-peoples-crud/build-and-push.yml?label=Build)
 [![Trivy Scan](https://github.com/dellabeneta/python-peoples-crud/actions/workflows/trivy-scan.yml/badge.svg)](https://github.com/dellabeneta/python-peoples-crud/actions/workflows/trivy-scan.yml)
 ![GitHub top language](https://img.shields.io/github/languages/top/dellabeneta/python-peoples-crud)
 ![GitHub License](https://img.shields.io/github/license/dellabeneta/python-peoples-crud?color=blue)
