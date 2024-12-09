@@ -1,22 +1,22 @@
-name: Build and Push Docker Images
+name: Build and Push
 
 on:
   push:
     branches: [ "main" ]
-  #   paths:
-  #     - 'backend/**'
-  #     - 'frontend/**'
-  #     - 'requirements.txt'
-  #     - 'Dockerfile'
-  #     - '.dockerignore'
-  # pull_request:
-  #   branches: [ "main" ]
-  #   paths:
-  #     - 'backend/**'
-  #     - 'frontend/**'
-  #     - 'requirements.txt'
-  #     - 'Dockerfile'
-  #     - '.dockerignore'
+    paths:
+      - 'backend/**'
+      - 'frontend/**'
+      - 'requirements.txt'
+      - 'Dockerfile'
+      - '.dockerignore'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'backend/**'
+      - 'frontend/**'
+      - 'requirements.txt'
+      - 'Dockerfile'
+      - '.dockerignore'
 
 jobs:
   build-and-push:

@@ -1,22 +1,10 @@
-name: Trivy scan Docker images for vulnerabilities
+name: Trivy Scan
 
 on:
-  push:
-    branches: [ "main" ]
-  #   paths:
-  #     - 'backend/**'
-  #     - 'frontend/**'
-  #     - 'requirements.txt'
-  #     - 'Dockerfile'
-  #     - '.dockerignore'
-  # pull_request:
-  #   branches: [ "main" ]
-  #   paths:
-  #     - 'backend/**'
-  #     - 'frontend/**'
-  #     - 'requirements.txt'
-  #     - 'Dockerfile'
-  #     - '.dockerignore'
+  workflow_run:
+    workflows: ["Build and Push"]
+    types:
+      - completed
 
 jobs:
   build-and-push:
@@ -26,7 +14,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@0.28.0
         with:
-          image-ref: ${{ secrets.DOCKERHUB_USERNAME }}/python-peoples-crud-backend:latest
+          image-ref: '${{ secrets.DOCKERHUB_USERNAME }}/python-peoples-crud-backend:latest'
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
