@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    # Para o backend
       - name: Run Trivy Backend Docker Image
         uses: aquasecurity/trivy-action@0.28.0
         with:
@@ -29,7 +30,7 @@ jobs:
           name: trivy-report
           path: trivy-backend-report.json
     
-    steps:
+      # Para o frontend
       - name: Run Trivy Frontend Docker Image
         uses: aquasecurity/trivy-action@0.28.0
         with:
