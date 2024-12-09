@@ -7,7 +7,7 @@
 
 ![Docker Image Version](https://img.shields.io/docker/v/dellabeneta/python-peoples-crud-backend/latest)
 ![Docker Pulls](https://img.shields.io/docker/pulls/dellabeneta/python-peoples-crud-backend)
-![Docker Build Status](https://img.shields.io/docker/build/dellabeneta/python-peoples-crud-backend)
+![Docker Build Status](https://img.shields.io/docker/build/dellabeneta/python-peoples-crud-backend/latest)
 
 # Sistema de Cadastro de Pessoas
 
