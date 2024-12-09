@@ -122,3 +122,38 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 - Adicionar mais funcionalidades de autenticação.
 - Melhorar a interface do usuário.
 - Implementar testes automatizados.
+
+## Diagrama
+
++-------------------+
+|                   |
+|   Usuário         |
+|                   |
++---------+---------+
+          |
+          |  (1) Requisição HTTP
+          |
++---------v---------+
+|                   |
+|   Frontend        |
+|   (React)        |
+|                   |
++---------+---------+
+          |
+          |  (2) Requisição API
+          |
++---------v---------+
+|                   |
+|   Backend         |
+|   (FastAPI)      |
+|                   |
++---------+---------+
+          |
+          |  (3) Acesso ao Banco de Dados
+          |
++---------v---------+
+|                   |
+|   Banco de Dados  |
+|   (PostgreSQL)    |
+|                   |
++-------------------+
