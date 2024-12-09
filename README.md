@@ -4,7 +4,7 @@
 [![Trivy Scan](https://github.com/dellabeneta/python-peoples-crud/actions/workflows/trivy-scan.yml/badge.svg)](https://github.com/dellabeneta/python-peoples-crud/actions/workflows/trivy-scan.yml)
 ![GitHub top language](https://img.shields.io/github/languages/top/dellabeneta/python-peoples-crud)
 ![GitHub License](https://img.shields.io/github/license/dellabeneta/python-peoples-crud?color=blue)
-![GitHub Release](https://img.shields.io/github/v/release/dellabeneta/python-peoples-crud)
+![GitHub Release](https://img.shields.io/github/release/dellabeneta/python-peoples-crud)
 
 # Sistema de Cadastro de Pessoas
 
