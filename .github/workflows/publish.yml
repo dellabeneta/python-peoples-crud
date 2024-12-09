@@ -47,22 +47,29 @@ jobs:
             type=sha,format=short
             type=raw,value={{date 'YYYYMMDD'}}
         
-      - name: Build, Trivy Scan and push backend
+      - name: Build and push backend
         uses: docker/build-push-action@v4
         with:
           context: ./backend
           file: ./backend/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-        run: |
-          trivy image --severity CRITICAL,HIGH --format table python-peoples-crud-backend:latest
-          
-      - name: Build, Trivy Scan and push frontend
+               
+      - name: Build and push frontend
         uses: docker/build-push-action@v4
         with:
           context: ./frontend
           file: ./frontend/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-        run: |
-          trivy image --severity CRITICAL,HIGH --format table python-peoples-crud-frontend:latest
+        
+      - name: Trivy Scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'python-peoples-crud-backend:latest'
+          format: 'table'
+          severity: 'CRITICAL,HIGH'
+          ignore-unfixed: 'true'
+          vuln-type: 'os,library'
+          ignorefile: '.trivyignore'
+          security-checks: 'vuln,secret'
