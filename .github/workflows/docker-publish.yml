@@ -1,3 +1,25 @@
+name: Build and Push Docker Images
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - 'backend/**'           # Alterações em qualquer arquivo dentro da pasta 'backend'
+      - 'frontend/**'           # Alterações em qualquer arquivo dentro da pasta 'frontend'
+      - 'requirements.txt'      # Alterações no arquivo 'requirements.txt'
+      - 'Dockerfile'            # Alterações no Dockerfile
+      - '.dockerignore'         # Alterações no arquivo '.dockerignore'
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - 'backend/**'
+      - 'frontend/**'
+      - 'requirements.txt'
+      - 'Dockerfile'
+      - '.dockerignore'
+
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
