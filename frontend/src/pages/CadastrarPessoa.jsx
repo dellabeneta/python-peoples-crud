@@ -38,7 +38,7 @@ function CadastrarPessoa() {
       navigate('/');
     } catch (error) {
       console.error('Erro ao cadastrar pessoa:', error);
-      alert('Erro ao cadastrar pessoa. Verifique os dados e tente novamente.');
+      alert('Erro ao cadastrar pessoa. Por favor, verifique os dados e tente novamente.');
     }
   };
 
