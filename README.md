@@ -25,7 +25,7 @@ Um sistema completo de CRUD de pessoas com autenticação JWT, frontend em React
 
 ### 1. Clonar o Repositório
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/dellabeneta/python-peoples-crud.git
 cd python-peoples-crud
 ```
 
@@ -105,8 +105,20 @@ Se não configurar no `.env`, use:
 
 ## Contribuição
 
-[Especifica como contribuir]
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou relatar problemas.
 
 ## Licença
 
-[Especificar a licença do projeto]
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## FAQ
+- **Como posso contribuir?**
+  - Sinta-se à vontade para abrir um pull request com suas alterações ou sugestões.
+
+- **Onde posso encontrar mais informações?**
+  - Consulte a documentação do projeto ou entre em contato.
+
+## Roadmap
+- Adicionar mais funcionalidades de autenticação.
+- Melhorar a interface do usuário.
+- Implementar testes automatizados.
