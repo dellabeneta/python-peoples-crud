@@ -8,7 +8,7 @@
 ![Docker Pulls](https://img.shields.io/docker/pulls/dellabeneta/python-peoples-crud-backend)
 ![Docker Image Version](https://img.shields.io/docker/v/dellabeneta/python-peoples-crud-backend/latest)
 
-
+![Terraform Version](https://img.shields.io/badge/Terraform-v1.10.1-fedora)
 
 # Sistema de Cadastro de Pessoas
 
