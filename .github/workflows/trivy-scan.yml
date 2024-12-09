@@ -27,7 +27,7 @@ jobs:
       - name: Upload Trivy report as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: trivy-report
+          name: trivy-backend-report
           path: trivy-backend-report.json
     
       # Para o frontend
@@ -45,5 +45,5 @@ jobs:
       - name: Upload Trivy report as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: trivy-report
+          name: trivy-frontend-report
           path: trivy-frontend-report.json
