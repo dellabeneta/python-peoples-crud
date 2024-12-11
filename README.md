@@ -103,6 +103,98 @@ Se não configurar no `.env`, use:
 - **Autenticação**: JWT
 - **Containerização**: Docker
 
+## Tree do Projeto, diretórios e aquivos:
+
+della@fedora:~/projetos$ tree
+.
+└── python-peoples-crud
+    ├── backend
+    │   ├── app
+    │   │   ├── core
+    │   │   │   ├── auth.py
+    │   │   │   ├── database.py
+    │   │   │   └── __pycache__
+    │   │   │       ├── auth.cpython-311.pyc
+    │   │   │       └── database.cpython-311.pyc
+    │   │   ├── main.py
+    │   │   ├── models
+    │   │   │   ├── pessoa.py
+    │   │   │   ├── __pycache__
+    │   │   │   │   ├── pessoa.cpython-311.pyc
+    │   │   │   │   └── user.cpython-311.pyc
+    │   │   │   └── user.py
+    │   │   ├── __pycache__
+    │   │   │   └── main.cpython-311.pyc
+    │   │   ├── routes
+    │   │   │   ├── auth.py
+    │   │   │   ├── pessoa.py
+    │   │   │   └── __pycache__
+    │   │   │       ├── auth.cpython-311.pyc
+    │   │   │       └── pessoa.cpython-311.pyc
+    │   │   └── schemas
+    │   │       ├── pagination.py
+    │   │       ├── pessoa.py
+    │   │       ├── __pycache__
+    │   │       │   ├── pagination.cpython-311.pyc
+    │   │       │   ├── pessoa.cpython-311.pyc
+    │   │       │   └── user.cpython-311.pyc
+    │   │       └── user.py
+    │   ├── Dockerfile
+    │   ├── entrypoint.sh
+    │   ├── requirements.txt
+    │   ├── scripts
+    │   │   ├── create_admin_simple.py
+    │   │   ├── create_fake_pessoas.py
+    │   │   ├── init.sh
+    │   │   ├── verify_admin.py
+    │   │   └── wait-for-postgres.py
+    │   └── tests
+    ├── docker-compose.yml
+    ├── docker-nuke.sh
+    ├── frontend
+    │   ├── Dockerfile
+    │   ├── eslint.config.js
+    │   ├── index.html
+    │   ├── node_modules
+    │   ├── package.json
+    │   ├── package-lock.json
+    │   ├── public
+    │   │   └── vite.svg
+    │   ├── src
+    │   │   ├── App.jsx
+    │   │   ├── components
+    │   │   │   ├── Header.jsx
+    │   │   │   ├── PrivateRoute.jsx
+    │   │   │   └── ThemeToggle.jsx
+    │   │   ├── contexts
+    │   │   │   └── AuthContext.jsx
+    │   │   ├── main.jsx
+    │   │   ├── pages
+    │   │   │   ├── CadastrarPessoa.jsx
+    │   │   │   ├── EditarPessoa.jsx
+    │   │   │   ├── ListaPessoas.jsx
+    │   │   │   └── Login.jsx
+    │   │   └── services
+    │   │       └── api.js
+    │   └── vite.config.js
+    ├── LICENSE
+    ├── Makefile
+    ├── notas
+    ├── README.md
+    ├── scripts
+    │   └── environment.sh
+    └── terraform
+        ├── backend.tf
+        ├── database-cluster.tf.disabled
+        ├── droplet.tf
+        ├── networking.tf
+        ├── outputs.tf
+        ├── provider.tf
+        └── ssh-key.tf
+
+25 directories, 60 files
+
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou relatar problemas.
