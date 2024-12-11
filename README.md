@@ -105,6 +105,7 @@ Se não configurar no `.env`, use:
 
 ## Tree do Projeto, diretórios e aquivos:
 
+```
 della@fedora:~/projetos$ tree
 .
 └── python-peoples-crud
@@ -193,7 +194,7 @@ della@fedora:~/projetos$ tree
         └── ssh-key.tf
 
 25 directories, 60 files
-
+```
 
 ## Contribuição
 
